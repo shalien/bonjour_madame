@@ -1,5 +1,6 @@
 part of '../resource.dart';
 
+/// Represent a Bonjour Madame [Post] by a subset of a Rss item properties
 @immutable
 final class Post extends Resource {
   /// Title of the post
@@ -20,15 +21,6 @@ final class Post extends Resource {
   /// Link to the image
   final Uri image;
 
-  const Post._({
-    required this.title,
-    required this.link,
-    required this.categories,
-    required this.guid,
-    required this.image,
-    required this.pubDate,
-  }) : super._();
-
   Post._fromRssItem(super.rssItem)
       : title = rssItem.title!,
         link = Uri.parse(rssItem.link!),
@@ -36,8 +28,9 @@ final class Post extends Resource {
             rssItem.categories.map((category) => category.value).toList(),
         guid = Uri.parse(rssItem.guid!),
         image = Uri.parse(rssItem.content!.images.first.split('?').first),
-        pubDate = DateTime.parse(rssItem.pubDate!),
+        pubDate = parseRfc822Date(rssItem.pubDate!),
         super._fromRssItem();
 
+  /// Create a [Post] using data from a [RssItem]
   factory Post.fromRssItem(final RssItem rssItem) => Post._fromRssItem(rssItem);
 }
