@@ -1,11 +1,6 @@
-<br />
-<div style="text-align: center;">
-    <img alt="Bonjour Madame written in white in a red rectangle" src=".assets/logo_large.png" width="400" height="106">
-</div>
-<br />
+![bonjour_madame](https://gitlab.projetretro.io/shalien/bonjour_madame/-/raw/main/.assets/logo_large.png?ref_type=heads)
 
 [bonjour_madame](https://pub.dev/bonjour_madame) is a library allowing to fetch data from the RSS feed of the french erotic website [Bonjour Madame](https://bonjourmadame.fr).
-
 
 [![pipeline status](https://gitlab.projetretro.io/shalien/bonjour_madame/badges/main/pipeline.svg)](https://gitlab.projetretro.io/shalien/bonjour_madame/-/commits/main)
 [![coverage report](https://gitlab.projetretro.io/shalien/bonjour_madame/badges/main/coverage.svg)](https://gitlab.projetretro.io/shalien/bonjour_madame/-/commits/main)
@@ -16,7 +11,6 @@
 - Simple dart wrapper around the [Bonjour Madame](https://bonjourmadame.fr) rss feed
 - Using the [http](https://pub.dev/http) package allowing to use it capacity to interface with native and/or custom http clients
 
-
 ## Getting started
 
 Run 
@@ -25,7 +19,7 @@ Run
 dart pub add bonjour_madame
 ```
 
-or add 
+or add
 
 ```yml
     bonjour_madame: ^1.0.0
