@@ -1,0 +1,7 @@
+*.iml
+.assets/
+.dart_tool
+.devcontainer/
+.github/
+.idea/
+doc/
