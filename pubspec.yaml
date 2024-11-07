@@ -10,9 +10,8 @@ topics:
   - french
 
 environment:
-  sdk: ^3.5.3
+  sdk: ^3.5.0
 
-# Add regular dependencies here.
 dependencies:
   collection: ^1.19.0
   http: ^1.2.2

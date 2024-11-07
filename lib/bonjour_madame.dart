@@ -1,7 +1,7 @@
 /// {@inject-html}
 /// <br />
 /// <div style="text-align: center;">
-///     <img alt="Bonjour Madame written in white in a red rectangle" src="https://gitlab.projetretro.io/shalien/bonjour_madame/bonjour_madame_long.jpg" width="400" height="106">
+///     <img alt="Bonjour Madame written in white in a red rectangle" src="https://gitlab.projetretro.io/shalien/bonjour_madame/.assets/logo_large.png" width="400" height="106">
 /// </div>
 /// <br />
 /// {@end-inject-html}
